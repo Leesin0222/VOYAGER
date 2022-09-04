@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Voyager.notoregular.TextView" parent="Widget.MaterialComponents.TextView">
+        
+    </style>
+</resources>
