@@ -11,6 +11,7 @@
         android:layout_height="24dp"
         android:src="@drawable/ic_rocket"
         app:layout_constraintBottom_toBottomOf="@+id/tv_waiting_name"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_waiting_name" />
 
     <TextView
