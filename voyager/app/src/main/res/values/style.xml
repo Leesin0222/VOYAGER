@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Voyager.notoregular.TextView" parent="Widget.MaterialComponents.TextView">
-        
+    <style name="Voyager.NotoSanskr.Regular.14.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/noto_sans_kr_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="Voyager.NotoSansKr.Regular.16.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/noto_sans_kr_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="Voyager.ProtoMono.SemiBold.18.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/proto_mono_semi_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="Voyager.NotoSansKr.Medium.16.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/noto_sans_kr_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Voyager.NotoSansKr.Medium.18.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/noto_sans_kr_medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Voyager.NotoSansKr.Regular.18.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/noto_sans_kr_regular</item>
+        <item name="android:textSize">18sp</item>
     </style>
 </resources>
