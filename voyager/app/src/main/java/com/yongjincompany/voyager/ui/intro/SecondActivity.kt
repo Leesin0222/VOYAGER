@@ -2,7 +2,7 @@ package com.yongjincompany.voyager.ui.intro
 
 import android.content.Intent
 import android.os.Bundle
-import com.yongjincompany.voyager.MainActivity
+import com.yongjincompany.voyager.ui.home.MainActivity
 import com.yongjincompany.voyager.R
 import com.yongjincompany.voyager.databinding.ActivitySecondBinding
 import com.yongjincompany.voyager.ui.base.BaseActivity
