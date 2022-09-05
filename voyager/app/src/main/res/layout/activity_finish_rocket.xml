@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Voyager.NotoSansKr.Medium.18.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="로켓 만들기"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/Voyager.ProtoMono.SemiBold.18.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="ROCKET"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+        <TextView
+            android:id="@+id/tv_rocket_name"
+            style="@style/Voyager.NotoSansKr.Medium.18.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="이용진 님의 나로호"
+            android:textColor="@color/radio_color"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView12"
+            style="@style/Voyager.ProtoMono.SemiBold.18.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:text="CODE"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tv_rocket_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rocket_name" />
+
+        <EditText
+            android:id="@+id/et_nickname"
+            style="@style/Voyager.NotoSansKr.Regular.16.TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit"
+            android:ems="10"
+            android:hint="로켓 초대 코드"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="#D9D9D9"
+            android:textColorHint="#80D9D9D9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:text="* 코드를 공유하고 로켓에 항해자로 초대해보세요."
+            android:textColor="@color/radio_color"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/et_nickname"
+            app:layout_constraintTop_toBottomOf="@+id/et_nickname" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_finish"
+            style="@style/Voyager.NotoSansKr.Medium.18.TextView"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:background="@drawable/go_btn"
+            android:text="로켓 만들기 완료"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
