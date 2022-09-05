@@ -36,6 +36,9 @@
 
         <activity android:name=".ui.room.MakeRocketActivity"
             android:exported="false"/>
+
+        <activity android:name=".ui.room.FinishRocketActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>
