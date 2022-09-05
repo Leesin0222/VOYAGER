@@ -43,7 +43,7 @@
             app:layout_constraintTop_toBottomOf="@+id/iv_back" />
 
         <EditText
-            android:id="@+id/et_code"
+            android:id="@+id/et_name"
             style="@style/Voyager.NotoSansKr.Regular.16.TextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -73,10 +73,10 @@
             android:text="NAME"
             android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/textView5"
-            app:layout_constraintTop_toBottomOf="@+id/et_code" />
+            app:layout_constraintTop_toBottomOf="@+id/et_name" />
 
         <EditText
-            android:id="@+id/et_name"
+            android:id="@+id/et_nickname"
             style="@style/Voyager.NotoSansKr.Regular.16.TextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -105,8 +105,8 @@
             android:layout_marginTop="110dp"
             android:text="MAIL ARRIVAL"
             android:textColor="@color/white"
-            app:layout_constraintStart_toStartOf="@+id/et_name"
-            app:layout_constraintTop_toBottomOf="@+id/et_name" />
+            app:layout_constraintStart_toStartOf="@+id/et_nickname"
+            app:layout_constraintTop_toBottomOf="@+id/et_nickname" />
 
         <RadioGroup
             android:id="@+id/rg_arrival"
