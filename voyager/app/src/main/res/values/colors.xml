@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background">#1F1F1F</color>
     <color name="main_color">#05A082</color>
+    <color name="edit_color">#2D2D2D</color>
+    <color name="radio_color">#D9D9D9</color>
 </resources>
