@@ -1,5 +1,6 @@
 package com.yongjincompany.voyager.ui.room
 
+import android.content.Intent
 import android.os.Bundle
 import com.yongjincompany.voyager.R
 import com.yongjincompany.voyager.databinding.ActivityMakeRocketBinding
@@ -12,6 +13,9 @@ class MakeRocketActivity : BaseActivity<ActivityMakeRocketBinding>(
         super.onCreate(savedInstanceState)
     }
     override fun initView() {
-
+        binding.btnNext.setOnClickListener {
+            val intent = Intent(this, FinishRocketActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
