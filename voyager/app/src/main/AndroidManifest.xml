@@ -34,17 +34,25 @@
             android:name=".ui.room.MakeHomeActivity"
             android:exported="false" />
 
-        <activity android:name=".ui.room.MakeRocketActivity"
-            android:exported="false"/>
+        <activity
+            android:name=".ui.room.MakeRocketActivity"
+            android:exported="false" />
 
-        <activity android:name=".ui.room.FinishRocketActivity"
-            android:exported="false"/>
+        <activity
+            android:name=".ui.room.FinishRocketActivity"
+            android:exported="false" />
 
-        <activity android:name=".ui.participate.BoardHomeActivity"
-            android:exported="false"/>
+        <activity
+            android:name=".ui.participate.BoardHomeActivity"
+            android:exported="false" />
 
-        <activity android:name=".ui.participate.BoardWaitingActivity"
-            android:exported="false"/>
+        <activity
+            android:name=".ui.participate.BoardWaitingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.loading.LoadingActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
