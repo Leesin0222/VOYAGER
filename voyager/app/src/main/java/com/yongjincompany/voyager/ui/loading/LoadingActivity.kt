@@ -14,6 +14,7 @@ class LoadingActivity: BaseActivity<ActivityLoadingBinding>(
 
     }
     override fun initView() {
+        //TODO: 달이 막 화면으로 점점 커져서 도착한 것 같은 효과를 내게 하자 어차피 로딜화면 아니우주로 가는 화면이니깐..!
         Glide.with(this).load(R.drawable.space).centerCrop().into(binding.ivSpaceBackground)
     }
 }
