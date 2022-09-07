@@ -53,6 +53,10 @@
         <activity
             android:name=".ui.loading.LoadingActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".ui.memo.MemoActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
