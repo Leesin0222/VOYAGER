@@ -7,6 +7,7 @@ import com.yongjincompany.voyager.R
 import com.yongjincompany.voyager.databinding.ActivityMainBinding
 import com.yongjincompany.voyager.ui.base.BaseActivity
 import com.yongjincompany.voyager.ui.loading.LoadingActivity
+import com.yongjincompany.voyager.ui.memo.MemoActivity
 import com.yongjincompany.voyager.ui.participate.BoardHomeActivity
 import com.yongjincompany.voyager.ui.room.MakeHomeActivity
 
@@ -30,6 +31,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>(
 
         binding.textView4.setOnClickListener {
             val intent = Intent(this, LoadingActivity::class.java)
+            startActivity(intent)
+        }
+        binding.textView3.setOnClickListener {
+            val intent = Intent(this, MemoActivity::class.java)
             startActivity(intent)
         }
     }
