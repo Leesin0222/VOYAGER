@@ -1,6 +1,6 @@
 # VOYAGER: 기록 아카이빙 서비스 🚀🌙
 
-### 🪐 유니톤 이후 우주에 고립되어 버린 이용진...
+### 🪐 유니톤 이후 1조에 홀로 고립되어 버린 이용진...
 <div align="center">
     <table>
         <th><a href="https://github.com/leesin0222">이용진</a></th>
