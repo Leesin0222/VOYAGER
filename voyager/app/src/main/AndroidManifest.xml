@@ -57,6 +57,15 @@
         <activity
             android:name=".ui.memo.MemoActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".ui.end.DateActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.end.ResultActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
