@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/left_line"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/right_line"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94" />
+
+        <ImageButton
+            android:id="@+id/iv_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="18.8dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            app:layout_constraintLeft_toLeftOf="@id/left_line"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="@id/left_line"
+            app:layout_constraintRight_toRightOf="@id/right_line"
+            app:layout_constraintTop_toBottomOf="@id/iv_back">
+
+            <TextView
+                android:id="@+id/tv_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:text="회원가입하고"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_main2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:text="친구들과 함께 우주로"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_et"
+                style="@style/Voyager.NotoSanskr.Regular.14.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="먼저 본인의 정보를 입력해주세요."
+                android:textColor="@color/radio_color" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <EditText
+                    android:id="@+id/et_id"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/edit"
+                    android:hint="아이디를 입력해주세요"
+                    android:maxLength="30"
+                    android:paddingStart="14dp"
+                    android:singleLine="true"
+                    android:textColorHint="#BDBDBD"
+                    android:textSize="17sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit"
+                    android:hint="비밀번호를 입력해주세요"
+                    android:maxLength="30"
+                    android:paddingStart="14dp"
+                    android:singleLine="true"
+                    android:textColorHint="#BDBDBD"
+                    android:textSize="17sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_id" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tooltip"
+            android:gravity="center"
+            android:text="가입하기"
+            android:textColor="#EEEEEE"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/left_line"
+            app:layout_constraintRight_toRightOf="@id/right_line" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
