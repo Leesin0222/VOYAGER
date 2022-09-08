@@ -27,10 +27,6 @@
             android:exported="false" />
 
         <activity
-            android:name=".ui.intro.SecondActivity"
-            android:exported="false" />
-
-        <activity
             android:name=".ui.room.MakeHomeActivity"
             android:exported="false" />
 
