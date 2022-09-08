@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_space_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/tv_rocket_name"
+            style="@style/Voyager.NotoSansKr.Medium.18.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:text="유니톤9호"
+            android:textColor="#858484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/Voyager.NotoSansKr.Medium.16.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="3일 남음"
+            android:textColor="#8B8B8B"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rocket_name" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="328dp"
+            android:layout_height="440dp"
+            android:layout_marginTop="153dp"
+            android:layout_marginBottom="143dp"
+            android:background="@drawable/edit"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/picture"
+            android:layout_width="310dp"
+            android:layout_height="310dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="113dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="@+id/view8"
+            app:layout_constraintStart_toStartOf="@+id/view8"
+            app:layout_constraintTop_toTopOf="@+id/view8" />
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_image"
+            app:layout_constraintBottom_toBottomOf="@+id/picture"
+            app:layout_constraintEnd_toEndOf="@+id/picture"
+            app:layout_constraintStart_toStartOf="@+id/picture"
+            app:layout_constraintTop_toTopOf="@+id/picture" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            style="@style/Voyager.NotoSansKr.Medium.16.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="12dp"
+            android:text="지구인 3"
+            android:textColor="@color/main_color"
+            app:layout_constraintStart_toStartOf="@+id/view8"
+            app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+        <TextView
+            android:id="@+id/tv_contents"
+            style="@style/Voyager.NotoSanskr.Regular.14.TextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="18dp"
+            android:background="@color/white"
+            android:hint="3일 후 보게 될 추억을 남겨보세요.(42이자 이내)\nex. 여행, 활동, 생일, 일상, 가족, 반려견"
+            android:textColor="#919196"
+            app:layout_constraintBottom_toBottomOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="@+id/view8"
+            app:layout_constraintStart_toStartOf="@+id/tv_nickname"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nickname" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
