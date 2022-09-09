@@ -32,8 +32,6 @@ class FirstActivity : BaseActivity<ActivityFirstBinding>(
                 binding.tvIntroduce.visibility = View.VISIBLE
                 binding.ivTop.visibility = View.VISIBLE
                 binding.tvFooter.visibility = View.VISIBLE
-
-
             }
 
             override fun onAnimationEnd(p0: Animation?) {
@@ -55,7 +53,7 @@ class FirstActivity : BaseActivity<ActivityFirstBinding>(
                 binding.tvIntroduce.visibility = View.INVISIBLE
                 binding.ivTop.visibility = View.INVISIBLE
                 binding.tvFooter.visibility = View.INVISIBLE
-                Thread.sleep(500)
+                Thread.sleep(150)
 
                 val intent = Intent(this@FirstActivity, HomeActivity::class.java)
                 startActivity(intent)
