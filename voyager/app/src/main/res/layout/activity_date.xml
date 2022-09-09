@@ -51,29 +51,20 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-        <View
+        <ImageView
             android:id="@+id/picture"
             android:layout_width="310dp"
             android:layout_height="310dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_moon"
             android:layout_marginBottom="113dp"
             android:background="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/view8"
             app:layout_constraintEnd_toEndOf="@+id/view8"
             app:layout_constraintStart_toStartOf="@+id/view8"
             app:layout_constraintTop_toTopOf="@+id/view8" />
-
-        <ImageView
-            android:id="@+id/iv_picture"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ic_image"
-            app:layout_constraintBottom_toBottomOf="@+id/picture"
-            app:layout_constraintEnd_toEndOf="@+id/picture"
-            app:layout_constraintStart_toStartOf="@+id/picture"
-            app:layout_constraintTop_toTopOf="@+id/picture" />
 
         <TextView
             android:id="@+id/tv_nickname"
@@ -96,7 +87,7 @@
             android:layout_marginEnd="27dp"
             android:layout_marginBottom="18dp"
             android:background="@color/white"
-            android:hint="3일 후 보게 될 추억을 남겨보세요.(42이자 이내)\nex. 여행, 활동, 생일, 일상, 가족, 반려견"
+            android:text="달은 떠올랐고 내 운명도 결정됬다. 자! 가자 이용진 피카츄 라이츄 경은님 디자인 잘 부탁드려요 이건 그저 프로토 버젼일 뿐이라고요.."
             android:textColor="#919196"
             app:layout_constraintBottom_toBottomOf="@+id/view8"
             app:layout_constraintEnd_toEndOf="@+id/view8"
