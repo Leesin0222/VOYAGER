@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.yongjincompany.voyager.R
 import com.yongjincompany.voyager.databinding.ActivityMemoBinding
 import com.yongjincompany.voyager.ui.base.BaseActivity
+import com.yongjincompany.voyager.ui.end.DateActivity
 import com.yongjincompany.voyager.ui.home.MainActivity
 
 class MemoActivity : BaseActivity<ActivityMemoBinding>(
@@ -17,7 +18,7 @@ class MemoActivity : BaseActivity<ActivityMemoBinding>(
 
     override fun initView() {
         binding.btnFinish.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, DateActivity::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
             finish()
