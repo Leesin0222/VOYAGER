@@ -1,5 +1,6 @@
 package com.yongjincompany.voyager.ui.end
 
+import android.content.Intent
 import android.os.Bundle
 import com.yongjincompany.voyager.R
 import com.yongjincompany.voyager.databinding.ActivityResultBinding
@@ -14,7 +15,9 @@ class ResultActivity : BaseActivity<ActivityResultBinding>(
     }
 
     override fun initView() {
-
+        binding.ivBack.setOnClickListener {
+            finish()
+        }
     }
 
 }
