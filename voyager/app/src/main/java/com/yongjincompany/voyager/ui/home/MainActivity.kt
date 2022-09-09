@@ -22,11 +22,13 @@ class MainActivity : BaseActivity<ActivityMainBinding>(
         binding.btnMakeRocket.setOnClickListener {
             val intent = Intent(this, MakeHomeActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
         }
 
         binding.btnBoardRocket.setOnClickListener {
             val intent = Intent(this, BoardHomeActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
         }
 
         binding.textView4.setOnClickListener {
