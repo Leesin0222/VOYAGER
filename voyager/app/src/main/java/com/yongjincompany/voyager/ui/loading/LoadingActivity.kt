@@ -26,6 +26,7 @@ class LoadingActivity: BaseActivity<ActivityLoadingBinding>(
         binding.all.setOnClickListener {
             val intent = Intent(this, MemoActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }
