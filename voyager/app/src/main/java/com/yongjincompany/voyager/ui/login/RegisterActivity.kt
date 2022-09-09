@@ -7,13 +7,9 @@ import com.yongjincompany.voyager.databinding.ActivityRegisterBinding
 import com.yongjincompany.voyager.ui.base.BaseActivity
 import com.yongjincompany.voyager.ui.home.MainActivity
 
-class RegisterActivity: BaseActivity<ActivityRegisterBinding>(
+class RegisterActivity : BaseActivity<ActivityRegisterBinding>(
     R.layout.activity_register
 ) {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
     override fun initView() {
         binding.ivBack.setOnClickListener {
             finish()
@@ -21,6 +17,7 @@ class RegisterActivity: BaseActivity<ActivityRegisterBinding>(
         binding.btnRegister.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finishAffinity()
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
     }

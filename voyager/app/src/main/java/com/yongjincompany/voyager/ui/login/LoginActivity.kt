@@ -7,13 +7,14 @@ import com.yongjincompany.voyager.databinding.ActivityLoginBinding
 import com.yongjincompany.voyager.ui.base.BaseActivity
 import com.yongjincompany.voyager.ui.home.MainActivity
 
-class LoginActivity:BaseActivity<ActivityLoginBinding>(
+class LoginActivity : BaseActivity<ActivityLoginBinding>(
     R.layout.activity_login
 ) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
     }
+
     override fun initView() {
         binding.ivBack.setOnClickListener {
             finish()
@@ -21,6 +22,7 @@ class LoginActivity:BaseActivity<ActivityLoginBinding>(
         binding.btnLogin.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finishAffinity()
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
     }
