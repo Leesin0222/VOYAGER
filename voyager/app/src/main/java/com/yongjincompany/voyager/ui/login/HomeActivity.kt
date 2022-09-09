@@ -19,13 +19,13 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             overridePendingTransition(com.google.android.material.R.anim.abc_slide_in_bottom,
-                com.google.android.material.R.anim.abc_slide_in_top)
+                com.google.android.material.R.anim.abc_slide_out_top)
         }
         binding.btnJoin.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
             overridePendingTransition(com.google.android.material.R.anim.abc_slide_in_bottom,
-                com.google.android.material.R.anim.abc_slide_in_top)
+                com.google.android.material.R.anim.abc_slide_out_top)
         }
     }
 }
