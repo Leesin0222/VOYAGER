@@ -17,7 +17,7 @@ class MakeHomeActivity: BaseActivity<ActivityMakeHomeBinding>(
         binding.tvMakeRocket.setOnClickListener {
             val intent = Intent(this, MakeRocketActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
         }
     }
-
 }
