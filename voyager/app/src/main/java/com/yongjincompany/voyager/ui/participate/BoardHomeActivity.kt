@@ -16,6 +16,7 @@ class BoardHomeActivity : BaseActivity<ActivityBoardHomeBinding>(
         binding.btnBoardRocket.setOnClickListener {
             val intent = Intent(this, BoardWaitingActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }
