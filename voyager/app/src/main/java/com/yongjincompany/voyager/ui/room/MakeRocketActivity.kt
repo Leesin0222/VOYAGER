@@ -17,5 +17,9 @@ class MakeRocketActivity : BaseActivity<ActivityMakeRocketBinding>(
             val intent = Intent(this, FinishRocketActivity::class.java)
             startActivity(intent)
         }
+
+        binding.ivBack.setOnClickListener {
+            finish()
+        }
     }
 }
