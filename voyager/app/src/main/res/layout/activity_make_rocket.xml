@@ -138,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/custom_radio_btn"
-                android:text="7일후"
+                android:text="7일 후"
                 android:textColor="@color/radio_color" />
 
             <RadioButton
